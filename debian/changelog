@@ -1,0 +1,27 @@
+calamares (3.2.0-0+201806050+build4neptune2) stretch; urgency=medium
+
+  * Updated to new release from git 20180605
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 05 Jun 2018 19:20:46 +0000
+
+calamares (3.2.0-0+20180131+1710+build4neptune1) stretch; urgency=medium
+
+  * New upstream release packaged for Neptune
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 09 Feb 2018 12:21:47 +0100
+
+calamares (3.1.7-0+20170904+1710+build4neptune1) stretch; urgency=medium
+
+  * Build for stretch
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 08 Nov 2017 11:42:31 +0000
+
+calamares (3.1.7-0+20170904+1710+build4) 1710; urgency=low
+
+  [ Rohan Garg ]
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+  [ Debian CI ]
+  * Automatic CI Build
+
+ -- Debian CI <null@debian.org>  Tue, 07 Nov 2017 11:37:22 +0000

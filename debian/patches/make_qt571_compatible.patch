@@ -1,0 +1,34 @@
+--- calamares-3.2.0.orig/CMakeModules/CalamaresAddTranslations.cmake
++++ calamares-3.2.0/CMakeModules/CalamaresAddTranslations.cmake
+@@ -61,7 +61,7 @@ macro(add_calamares_translations languag
+     add_custom_command(
+         OUTPUT ${trans_outfile}
+         COMMAND "${Qt5Core_RCC_EXECUTABLE}"
+-        ARGS ${rcc_options} --format-version 1 -name ${trans_file} -o ${trans_outfile} ${trans_infile}
++        ARGS ${rcc_options} -name ${trans_file} -o ${trans_outfile} ${trans_infile}
+         MAIN_DEPENDENCY ${trans_infile}
+         DEPENDS ${QM_FILES}
+     )
+--- calamares-3.2.0.orig/src/modules/contextualprocess/ContextualProcessJob.cpp
++++ calamares-3.2.0/src/modules/contextualprocess/ContextualProcessJob.cpp
+@@ -66,7 +66,7 @@ struct ContextualProcessBinding
+     void append( const QString& value, CalamaresUtils::CommandList* commands )
+     {
+         checks.append( ValueCheck( value, commands ) );
+-        if ( value == '*' )
++        if ( value == "*" )
+             wildcard = commands;
+     }
+ 
+--- calamares-3.2.0.orig/src/modules/locale/GeoIPTests.h
++++ calamares-3.2.0/src/modules/locale/GeoIPTests.h
+@@ -20,6 +20,9 @@
+ #define GEOIPTESTS_H
+ 
+ #include <QObject>
++#include <QNetworkAccessManager>
++#include <QNetworkReply>
++#include <QNetworkRequest>
+ 
+ class GeoIPTests : public QObject
+ {

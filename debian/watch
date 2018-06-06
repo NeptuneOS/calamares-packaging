@@ -1,0 +1,3 @@
+version=4
+https://github.com/calamares/calamares/releases .*/calamares-@ANY_VERSION@@ARCHIVE_EXT@
+
